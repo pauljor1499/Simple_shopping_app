@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JOR MIDTERM EXAM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jor_midterm.js"></script>
+</head>
+
+<body onload="Default()">
+
+    <div class="banner">
+        <div class="line_1" style="width: 100%; height: 1px;">
+
+        </div>
+        <div class="app_name">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3dYoIxzR8jb2neQsZHdnexKP88F3DTEUCY0RgHeiHssLTrrLbMV_VxEURHjMvEbHnIH4UYe1pWgbm94jDNkQfzXKMY3yAPcqX_x_QMbsCaMMRfAReOdSgawlEQbWOuNGvrTSWDDkHBSIlXlCpUNgwQO=w797-h224-no"
+                alt="">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="topnav">
+            <a href="#home">HOME</a>
+            <a href="#essentials">ESSENTIALS</a>
+            <a href="#luxury">LUXURY</a>
+            <a href="#home&lifestyle">HOME & LIFESTYLE</a>
+            <a class="active" href="#cart">CART</a>
+            <div>
+                <button type="button"></button>
+                <input type="search" placeholder="Search...">
+            </div>
+        </div>
+
+        <h2 class="shopping_cart">Shopping Cart</h1>
+
+            <div class="items">
+
+                <ul>
+                    <li class="item">
+                        <div id="checkbox1_color" class="item1_checkbox">
+                            <input id="checkbox1" type="checkbox" onclick="CheckBox1()">
+                        </div>
+                        <div class="item1_image">
+                            <img src="https://lh3.googleusercontent.com/pw/ACtC-3d36YD1I_uAgkhKfG7wihOEELXjkEHNbuOLbZXpIRPIXU_B_hC35tL5NyYQtlw2UkwITfBukM4VonpFH2JsIXlDI6zhRUWJNkQPapo1N3ezV5uUK98Jy96R6VBHx5DjIEga9b-W305e7JDQIyT_VKqT=w1280-h512-no"
+                                alt="Nike Shoes">
+                        </div>
+                        <div class="item1_details">
+                            <span>Nike</span>
+                            <span><b>Nike Air Zoom Winflo 7</b></span>
+                            <span>₱4,995.23</span>
+                            <input id="item1_number" type="number" value="1" min="1" onclick="item1()">
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div id="checkbox2_color" class="item2_checkbox">
+                            <input id="checkbox2" type="checkbox" onclick="CheckBox2()">
+                        </div>
+                        <div class="item2_image">
+                            <img src="https://lh3.googleusercontent.com/pw/ACtC-3fihfmFF79cj6ct-nvraFGbfsxo26utF4oVmPU7ZuHQlRsFuKI4lHHk3_673FCT6u1uTx4FBxWCv7bzcx8ZtKIPcZAaUnqInpQ8rSkF1pa-AaDDTnALjrFsRTpuV3TF5DzjOAgT_xwHttpHJpqMxAP7=w581-h238-no"
+                                alt="Nike Shoes">
+                        </div>
+                        <div class="item2_details">
+                            <span>Nike</span>
+                            <span><b>Nike Air Zoom Pegasus 37</b></span>
+                            <span>₱6,295.15</span>
+                            <input id="item2_number" type="number" value="1" min="1" onclick="item2()">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- checkout form -->
+            <button id="bttn_checkout" type="button" onclick="CheckOut()">Check Out</button>
+            <form id="f_checkout">
+                <div class="checkout">
+                    <span id="checkout_subtotal">Sub Total: </span>
+                    <span id="checkout_shipping_fee">Shipping Fee: </span>
+                    <span id="checkout_total">Total Payment: </span>
+                </div>
+            </form>
+
+            <!-- radio button  -->
+            <div id="f_radio_button" class="bttn_radio">
+                <input id="radio_button" type="radio">
+                <label id="radio_button_class" for="radio" onclick="checkRadio()">Cash on Delivery</label>
+            </div>
+
+            <!-- place order  -->
+            <button id="bttn_placeorder" type="button" onclick="PlaceOrder()">Place Order</button>
+            <form id="f_placeorder">
+                <div class="placeorder">
+                    <div class="placeorder_details">
+                        <span>Summary of Orders:</span>
+                        <span id="summary_item1"></span>
+                        <span id="summary_item2"></span>
+                    </div>
+                </div>
+            </form>
+    </div>
+
+    <div class="footer">
+    </div>
+
+</body>
+
+</html>
